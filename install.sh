@@ -1,22 +1,22 @@
-sourcePath="/usr/local/ssr_hhx" # ssrÂ·¾¶
+sourcePath="/usr/local/ssr_hhx" # ssrè·¯å¾„
 if [ ! -d "$sourcePath" ]; then
-        mkdir "$sourcePath"
+  mkdir "$sourcePath"
 fi
 cd $sourcePath
 
 if [ -f '/etc/redhat-release'  ] ; then
-        yum install -y python git
+  yum install -y python git
 else
-        source /etc/os-release
-        cd "$sourcePath"
-        if [ "$ID" = "debian" ] || [ "$ID" = "ubuntu" ] ; then
-                apt-get install -y  python git
-        elif [ "$ID" = "centos" ]; then
-                yum install -y  python git
-        else
-                echo "shit ÏµÍ³²»´æÔÚ  µ½github¸øÎÒÌáissue "
-		echo "https://github.com/huanghuixin1/shadowsocksr.git"
-        fi
+  source /etc/os-release
+  cd "$sourcePath"
+  if [ "$ID" = "debian" ] || [ "$ID" = "ubuntu" ] ; then
+      apt-get install -y  python git
+  elif [ "$ID" = "centos" ]; then
+      yum install -y  python git
+  else
+      echo "shit ç³»ç»Ÿä¸å­˜åœ¨  åˆ°githubç»™æˆ‘æissue "
+      echo "https://github.com/huanghuixin1/shadowsocksr.git"
+  fi
 fi
 
 git clone https://github.com/huanghuixin1/shadowsocksr.git
