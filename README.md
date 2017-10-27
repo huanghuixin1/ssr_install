@@ -10,3 +10,6 @@ sudo ./install.sh
 - Ubuntu14.04 
 - Centos6
 - Centos7
+
+有bug请发issue   
+安装步骤有问题请发邮件联系我 hhx249803023#gmail.com(#换成@)
