@@ -13,10 +13,10 @@ else
         cd "$sourcePath"
         if [ "$ID" = "debian" ] || [ "$ID" = "ubuntu" ] ; then
                 apt-get update
-                apt-get install -y  python git
+                apt-get install -y  python git psmisc
         elif [ "$ID" = "centos" ]; then
                 yum update
-                yum install -y  python git
+                yum install -y  python git psmisc
         else
                 echo "shit ϵͳ������  ��github������issue "
 		echo "https://github.com/huanghuixin1/shadowsocksr.git"
