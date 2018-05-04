@@ -29,5 +29,5 @@ python /usr/local/ssr_hhx/shadowsocksr/shadowsocks/server.py -p 8899 -k 52hhx.co
 chmod +x /etc/rc.local
 # 倒数第二行添加
 sed -i '$i\python /usr/local/ssr_hhx/shadowsocksr/shadowsocks/server.py -p 8899 -k 52hhx.com -m none -O auth_chain_a -o tls1.2_ticket_auth_compatible &' /etc/rc.local
-
+systemctl enable rc-local
 exit 0
